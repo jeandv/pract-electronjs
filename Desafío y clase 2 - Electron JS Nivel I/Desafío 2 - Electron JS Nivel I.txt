@@ -1,0 +1,28 @@
+Enunciado:
+
+Realizar las siguientes actividades
+
+Objetivos:
+
+1.- Crear un proyecto nuevo e instalar el paquete Electron. Defina un arreglo con 4 URLs de paginas (cualesquiera). Hacer un ciclo que recorra el arreglo y abra una ventana nueva con cada URL en el arreglo LISTO
+2.- Hacer que la aplicación reciba por parámetro de consola una URL. Si el parámetro es recibido, crear una ventana nueva y cargar en la ventana la URL recibida por parámetro LISTO
+3.- Crear un proyecto nuevo e instalar el paquete Electron. Crear un archivo HTML que tenga un formulario para solicitar al usuario los datos que en el desafío anterior se solicitaron por consola. Debe crear un archivo CSS para que el formulario se vea decente. Cargar el archivo HTML al iniciarse la aplicación LISTO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.- Agregar un botón para programar el procesamiento de cada producto, es decir, agregarlo al arreglo siempre y cuando no haya sido agregado previamente (pendiente con las mayúsculas y minúsculas)
+
+5.- En la medida que se vayan procesando los productos, debe ir mostrándolos al usuario en una tabla, debe mostrar el sub total, el monto del IVA y el total a pagar
