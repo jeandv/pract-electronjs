@@ -1,0 +1,28 @@
+Enunciado:
+Realizar las siguientes actividades:
+Objetivos:
+
+1.- Crear una plantilla para una barra de menú en un archivo JS aparte, con las siguiente opciones: Alumnos->Listado, Nuevo, Buscar. Secciones -> Abrir Sección, Inscribir Alumno, Imprimir Facturas. Sistema -> Ayuda, Acerca de, DevTools, linea separadora, Salir ***LISTO****
+
+5.- Programar las sub opciones del menú "Sistema" usando la propiedad "role" de la clase MenuItem *******LISTO*****
+
+
+
+
+
+2.- Establecer a null el menú de la aplicación para que ninguna ventana tenga el menú por defecto de Electron ****LISTO duda****
+
+
+
+
+
+
+
+
+
+
+3.- Crear una ventana (que sera la ventana principal) y asignarle el menú creado en el objetivo 1 a esta ventana
+
+
+4.- Programar las opciones del menú "Alumnos" y "Secciones" para que se abra una ventana que tenga como titulo el texto de cada una de sus sub opciones, pero evitando que se abra mas de una vez la misma ventana. Ejemplo: si el usuario hace clic en la opción Alumnos>Listado, se abre una ventana con el titulo "Listado de alumnos", pero si el usuario vuelve a hacer clic en esa opción y la ventana no ha sido cerrada por el usuario, no se abre una ventana nueva sino que se vuelve a mostrar la ventana que ya había sido abierta. Esto con el fin de que no hayan varias instancias de la misma ventana asociada a una opción de menú. Ninguna de estas ventanas debe tener menú
+
