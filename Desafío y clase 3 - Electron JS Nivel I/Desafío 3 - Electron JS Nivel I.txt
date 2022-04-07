@@ -1,0 +1,25 @@
+Enunciado:
++++Crear un proyecto nueva y realizar las siguientes actividades
+
+Objetivos:
+1.- Crear una ventana Main que no se muestre automáticamente y cargarle una URL arbitraria (la de su preferencia). Hacer que la pagina se muestre 2 segundos después de que este lista para mostrarse +++LISTO++++++
+3.- Cuando queden 15 segundos en el contador de tiempo debe maximizarse la ventana automáticamente ++++LISTO+++++++++
+
+
+
+
+
+
+2.- Luego de mostrarse la ventana Main, crear un timeout que active una cuenta regresiva de 30 segundos. Cada vez que transcurra 1 segundo, se debe mostrar en el titulo de la ventana la cantidad de segundos que van quedando en el contador --LISTO------
+
+
+
+
+
+
+4.- Programar en el evento "maximize" de la ventana Main (es decir, cuando se maximice la ventana), hacer una pregunta al usuario si desea que se abra otra ventana con otra URL. En caso afirmativo, crear nueva ventana que debe aparecer centrada en la pantalla. Esta pregunta no debe ser modal a la ventana Main
+
+
+
+
+5.- Al llegar el timeout a cero segundos, se debe mostrar un mensaje al usuario indicando que se acabo el tiempo y luego deben cerrarse todas las ventanas que se hayan abierto. Este mensaje debe ser modal a la ventana Main
