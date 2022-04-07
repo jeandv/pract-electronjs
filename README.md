@@ -1,2 +1,2 @@
 # pract-electronjs
-Practicas usando Electron JS
+Practicas usando Electron JS.
