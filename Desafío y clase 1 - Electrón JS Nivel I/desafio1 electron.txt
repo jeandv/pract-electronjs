@@ -1,0 +1,15 @@
+Enunciado: º = finalizado y terminado
+
+Crear un programa de consola para simular un punto de venta, que permita facturar los productos que compra un cliente en una tienda. Realizar las siguiente actividades:
+
+Objetivos:
+1.- Inicializar el proyecto e instalar el paquete https://www.npmjs.com/package/readline-sync LISTO TODO********** º
+
+2.- Usando el paquete instalado en el objetivo anterior, leer por el teclado el nombre del cliente, su Rif y luego hacer un ciclo para leer varios productos, leyendo el nombre del producto, la cantidad y el precio LISTO TODO********** º
+
+3.- Crear un objeto con los datos del producto leídos en el objetivo anterior (nombre, precio y cantidad) y agregarlo a un arreglo de productos. Validar que no se pueda agregar 2 veces el mismo producto LISTO TODO****** º
+
+
+4.- Recibir por parámetro el número máximo de productos (--MAX_PRODUCTOS) que se pueden agregar a la factura y el porcentaje que corresponde al IVA (--IVA). Usar los datos recibidos por parámetro para limitar la cantidad de productos que se pueden agregar a la factura y para calcular el IVA. Si los parámetros no son recibidos, usar como IVA el 16% y no limitar la cantidad de productos LISTO TODO*** º
+
+5.- Cuando el cliente decida no agregar más productos a la factura, limpiar la consola y mostrar la lista de productos leídos con todos sus datos (nombre, cantidad, precio) más el sub total por producto (precio*cantidad) y al final mostrar el sub total de la factura (sumatoria de los subtotales de los productos), el monto del IVA y el total a pagar (sub total de la factura más el monto del IVA) LISTO TODO***** º
