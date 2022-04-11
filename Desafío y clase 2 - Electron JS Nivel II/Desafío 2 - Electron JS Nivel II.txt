@@ -1,0 +1,22 @@
+Enunciado:
+
+
+Se le ha contratado para crear una aplicación de escritorio tenga una ventana de inicio de sesión y una ventana principal donde se muestra el nombre del usuario que esta autenticado y se puede cerrar sesión. Para lograrlo, debe crear un documento HTML que contenga 2 inputs: uno para escribir el nombre usuario , otro para escribir la clave y un botón para iniciar sesión. Crear el main básico de una aplicación Electron, que al ejecutarse muestre la ventana de inicio de sesión, para luego implementar los siguientes requerimientos:
+
+
+Objetivos:
+
+
+1.- Programar que cuando el usuario haga click en el botón iniciar sesión, se envíe un mensaje al main process con los datos de usuario y clave que esta intentando iniciar sesión (los datos de los inputs) *
+
+
+2.- Definir en el main.js un arreglo de objetos de usuarios que pueden iniciar sesión en la aplicación, con sus respectivos nombres de usuario, clave y nombre completo. Programar en el main process el manejador de evento al recibir el mensaje que envía el render process al intentar iniciar sesión. Recibir los datos enviados por el render para buscar estos 2 datos en el arreglo de objetos de usuarios 
+
+
+3.- Si el nombre de usuario y clave NO existen en el arreglo, responder al render process con un valor que le indique que el usuario no existe, para que se muestre en el HTML un mensaje que le indique al usuario que no existe el usuario y clave que escribio
+
+
+4.- Si el nombre de usuario y clave existen, debe esconder la ventana de inicio de sesión y se debe mostrar la ventana principal. En el HTML de la ventana principal se debe mostrar el nombre completo del usuario que acaba de iniciar sesión (usar webContents.send para lograr este objetivo)
+
+
+5.- Programar en el HTML que se muestra en la ventana principal, que al hacer click en un hipervínculo con el texto "Cerrar Sesión" se envíe al main process un mensaje. El main process debe esconder la ventana principal y mostrar nuevamente la ventana de inicio de sesión

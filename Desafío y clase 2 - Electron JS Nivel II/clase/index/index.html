@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy " content="default-src 'self' 'unsafe-inline' ">
+  <title></title>
+</head>
+
+<body>
+  <button id="minimizar">minimizar</button>
+  <button id="maximizar">Maximizar</button>
+  <button id="imprimir">Imprimir</button>
+  <input type="text" id="nombre">
+  <button id="getSOName">getSOName</button>
+</body>
+<!-- <script src="../jquery-3.6.0.min.js"></script> -->
+<script>
+  let nombre = document.getElementById("nombre")
+  document.getElementById("minimizar").onclick = window.api.minimizar
+  // $("#minimizar").clic(window.api.minimizar)
+  document.getElementById("maximizar").onclick = window.api.maximizar
+  document.getElementById("imprimir").onclick = () => {
+    window.api.saveToPDF(nombre.value)
+  }
+  document.getElementById("getSOName").onclick = () => {
+    window.api.getSOName((soName) => {
+      nombre.value = soName
+    })
+  }
+  window.api.getMessage((color) => {
+    console.log(color)
+    document.bgColor = color
+  })
+  // $("#maximizar").clic(window.api.maximizar)
+</script>
+
+</html>
