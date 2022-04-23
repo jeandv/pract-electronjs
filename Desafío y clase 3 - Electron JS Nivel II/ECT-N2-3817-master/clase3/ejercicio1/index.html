@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <h1>Usando handle-invoke</h1>
+    <input type="file" />
+    <button id="btn-buscar-imagen">Buscar Imagen</button>
+    <button id="btn-guardar-pdf">Guardar en PDF</button>
+    <img id="foto" width="600" height="400"/>
+</body>
+<script>
+    const {ipcRenderer} = require("electron")
+
+    let foto=document.getElementById("foto");
+    foto.style.display="none"
+
+    document.getElementById("btn-guardar-pdf").onclick=()=>{
+        console.log("guardar a pdf")
+        ipcRenderer.invoke("guardar-pdf")
+            .then(()=>{
+
+            })
+    }
+
+    document.getElementById("btn-buscar-imagen").onclick=()=>{
+        console.log("click")
+        // invoke es la forma de enviar un 
+        // mensaje al main y manejar la respuesta
+        // como promesa
+        ipcRenderer.invoke("buscar-foto")
+            .then((resp)=>{
+                console.log("respondio el main")
+                console.log(resp)
+                if (!resp.canceled){
+                    foto.src=resp.filePaths[0]
+                    foto.style.display="block"
+                }
+            })
+    }
+</script>
+</html>

@@ -1,0 +1,14 @@
+Enunciado:
+En base al desafío anterior, realizar las siguientes actividades
+
+Objetivos:
+1.- crear un archivo JSON con nombre "usuarios.json", donde se almacenen los usuarios que pueden iniciar sesión en la aplicación. Reemplazar el uso del arreglo para buscar los usuarios por el uso de este archivo JSON. Debe leer el contenido del archivo cada vez que un usuario intente iniciar sesión *
+
+2.- Agregar a la interfaz de inicio de sesión un formulario con la opción de registro, donde se soliciten los datos del usuario de modo que se le permita registrarse para luego iniciar sesión. Al registrarse, sus datos deben almacenarse en el archivo "usuarios.json" *
+
+3.- Entre los datos del usuario, solicitar la fotografía del mismo. Para ello, debe colocar un botón que le permita al usuario abrir una ventana de dialogo para buscar un archivo en el disco duro y mostrarlo en una etiqueta img (como se hizo en clase) *
+
+4.- Al momento de guardar el nuevo usuario, se debe copiar el archivo de la ruta de donde se seleccionó a una carpeta especifica de fotos de usuarios que debe estar adentro de la carpeta de la aplicación. Entre los datos del usuario debe haber un nuevo atributo llamado "foto", que contenga la ruta de su foto, que debe ser una ruta relativa a la carpeta del proyecto * 
+
+5.- Al iniciar sesión exitosamente, en la página principal, debe mostrarse la foto del usuario autenticado,
+ usando la ruta de la foto que esta almacenada entre los datos del usuario *

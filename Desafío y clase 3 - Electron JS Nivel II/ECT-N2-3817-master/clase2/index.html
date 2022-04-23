@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+    <button id="minimizar">Minimizar</button>
+    <button id="maximizar">Maximizar</button><br>
+    <input type="text" id="nombre" />
+    <button id="imprimir">Imprimir</button>
+    <button id="getSoName">Nombre del SO</button>
+</body>
+
+<script>
+    let nombre = document.getElementById("nombre");
+
+    document.getElementById("minimizar").onclick=window.api.minimizar
+    document.getElementById("maximizar").onclick=window.api.maximizar
+    document.getElementById("imprimir").onclick=()=>{
+        window.api.saveToPDF(nombre.value)
+    }
+    document.getElementById("getSoName").onclick=()=>{
+        window.api.getSOName((soName)=>{
+            nombre.value=soName;
+        })
+    }
+    window.api.getMessage((color)=>{
+        console.log(color)
+        document.bgColor=color
+    })
+</script>
+</html>
