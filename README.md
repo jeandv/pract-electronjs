@@ -22,7 +22,7 @@
 
 ## Instalación 💻
 
-✔ Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el .html
+✔ Este proyecto necesita de la instalación de Electron JS para poder ver el resultado.
 
 ## Contratación 📧
 
