@@ -18,11 +18,12 @@
 · HTML5 <br>
 · CSS3 <br>
 · Javascript <br>
+· jQuery <br>
 · Electron JS
 
 ## Instalación 💻
 
-✔ Este proyecto necesita de la instalación de Electron JS para poder ver el resultado.
+✔ Este proyecto necesita de la instalación de Electron JS para poder ver el resultado. instala electron aqui: https://www.electronjs.org/
 
 ## Contratación 📧
 
