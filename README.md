@@ -17,6 +17,8 @@
 
 · HTML5 <br>
 · CSS3 <br>
+· SASS <br>
+· Bootstrap CSS <br>
 · Javascript <br>
 · jQuery <br>
 · Electron JS
