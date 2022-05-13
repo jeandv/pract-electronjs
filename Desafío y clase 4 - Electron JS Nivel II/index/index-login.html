@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 4 - Electron JS Nivel II</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/estilos-bar.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <div class="barra">
+        <div class="iconCont">
+            <img src="./icons/icono.ico" alt="">
+        </div>
+        <div class="titulo">Desafío 4 - Electron JS Nivel II</div>
+        <div class="barraBtns">
+            <button id="minimizar" class="minimizar">
+                <span class="material-symbols-outlined">
+                    minimize
+                </span>
+            </button>
+            <button id="maximizar" class="maximizar">
+                <span class="material-symbols-outlined">
+                    check_box_outline_blank
+                </span>
+            </button>
+            <button id="cerrar" class="cerrar">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+        </div>
+    </div>
+    <main>
+        <div class="contenedorTodo">
+            <div class="cajaTrasera">
+                <div class="cajaTraseraLogin">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btnLogin">Ir a iniciar sesión</button>
+                </div>
+                <div class="cajaTraseraRegister">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para que puedas iniciar sesión</p>
+                    <button id="btnRegister">Ir a regístrarse</button>
+                </div>
+            </div>
+            <div class="contLoginRegister">
+                <form action="" class="formLogin">
+                    <h2>Iniciar Sesión</h2>
+                    <input id="username" type="text" placeholder="Usuario" required>
+                    <input id="password" type="password" placeholder="Contraseña" required>
+                    <button id="btnLoguearse">Entrar</button>
+                </form>
+                <form action="" class="formRegister">
+                    <h2>Regístrarse</h2>
+                    <input id="nuevoName" type="text" placeholder="Nombre completo" required>
+                    <input id="nuevoUser" type="text" placeholder="Usuario" required>
+                    <input id="nuevoPass" type="password" placeholder="Contraseña" required>
+                    <button id="btnBuscarImg">Seleccionar foto de perfil</button>
+                    <button id="btnRegistrarse">Regístrarse</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./js/form.js"></script>
+<script src="./js/bar.js"></script>
+<script src="./js/index.js"></script>
+
+</html>

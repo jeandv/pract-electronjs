@@ -1,0 +1,1 @@
+falta: error alt+f4, guardar el cambio de foto en carpeta y mostrarlo.

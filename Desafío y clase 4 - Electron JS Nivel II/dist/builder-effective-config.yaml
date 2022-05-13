@@ -1,0 +1,17 @@
+directories:
+  output: dist
+  buildResources: build
+appId: Desafio electron
+extraResources:
+  - filter:
+      - ./index/icons/icono.ico
+win:
+  target: portable
+  icon: resources/big-logo.ico
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  installerIcon: ./index/icons/icono.ico
+  license: license.txt
+files: []
+electronVersion: 18.2.0
